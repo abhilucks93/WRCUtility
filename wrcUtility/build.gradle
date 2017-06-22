@@ -53,7 +53,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 
 bintray {
     user = 'abhilucks93'
-    key = '6cd071ff13696b40b6c7e95a32f0f7f923a80d53'
+    key = '*******************************'
     pkg {
         repo = 'WRC'
         name = 'WrcUtility'
