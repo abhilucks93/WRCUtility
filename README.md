@@ -1,5 +1,5 @@
 # WRC_UTILITY
-Utility Components
+Utility Components : Lets save the efforts for bigger problems.
 
 ## Download
 Grab library via Gradle
