@@ -1,6 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
 
 
 android {
@@ -32,48 +30,5 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
 }
 
-group = 'com.wildnet.wrcUtility' // Change this to match your package name
-version = '1.0.9' // Change this to match your version number
 
-
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-bintray {
-    user = 'abhilucks93'
-    key = '*******************************'
-    pkg {
-        repo = 'WRC'
-        name = 'WrcUtility'
-
-        version {
-            name = '1.0.9'
-            desc = 'Utility components'
-            released  = new Date()
-            vcsTag = '1.0.9'
-        }
-
-        licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/abhilucks93/wrcUtility.git'
-        websiteUrl = 'https://github.com/abhilucks93/wrcUtility'
-    }
-    configurations = ['archives']
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
 
