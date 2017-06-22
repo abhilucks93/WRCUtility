@@ -22,9 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':wrcUtility')
-
-    testCompile 'junit:junit:4.12'
-    compile 'com.wildnet.wrcUtility:wrcUtility:1.0.8'
     compile 'com.android.support:appcompat-v7:25.3.1'
 
 
