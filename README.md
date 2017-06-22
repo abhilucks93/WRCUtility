@@ -18,7 +18,7 @@ or Maven
 
 ## Utility classes included
 
-- [WRCCalculationUtility](#Download) - Set of utilities to calculate stuffs like screen width, pixel value, dp to px, format time, etc.
+- [WRCCalculationUtility](#WRC_UTILITY) - Set of utilities to calculate stuffs like screen width, pixel value, dp to px, format time, etc.
 - [WRCDateTimeUtility](Download) - Set of utilities to handle date manipulation.
 - [WRCDeviceUtility](Download) - Set of utilities to get device related stuff like Device Unique Key.
 - [WRCFileUtility](Download) - Set of utilities to handle File related tasks.
