@@ -1,4 +1,4 @@
-# WRC_UTILITY
+# WRCUtility
 Utility Components : Lets save the efforts for bigger problems.
 
 ## Download
